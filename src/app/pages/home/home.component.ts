@@ -8,10 +8,17 @@ import { MenuBarComponent } from '../../components/menu-bar/menu-bar.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MenuTitleComponent,BigCardComponent,SmallCardComponent,MenuBarComponent],
+  imports: [
+    MenuTitleComponent,
+    BigCardComponent,
+    SmallCardComponent,
+    MenuBarComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  photoCover:string="https://revistacontinente.com.br/image/view/news/image/3725/mobile"
+  contentTitle:string=""
+  contentDescription:string=""
 }
