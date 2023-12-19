@@ -3,6 +3,7 @@ import { MenuTitleComponent } from '../../components/menu-title/menu-title.compo
 import { BigCardComponent } from '../../components/big-card/big-card.component';
 import { SmallCardComponent } from '../../components/small-card/small-card.component';
 import { MenuBarComponent } from '../../components/menu-bar/menu-bar.component';
+import { dataFake } from '../../data/dataFake';
 
 
 @Component({
@@ -18,7 +19,8 @@ import { MenuBarComponent } from '../../components/menu-bar/menu-bar.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  photoCover:string="https://revistacontinente.com.br/image/view/news/image/3725/mobile"
-  contentTitle:string=""
-  contentDescription:string=""
+  itens =dataFake;
+  constructor(){
+    console.log(dataFake);
+  }
 }
